@@ -1,6 +1,4 @@
 // This component will display the album cover iamge and link to the album's external URL
-
-import React from 'react';
 import './AlbumImage.css';
 
 
@@ -8,7 +6,7 @@ const AlbumImage = ({ imageUrl, albumUrl, title, icons }) => {
   return (
     <div className="album-image-container">
       <a href={albumUrl} target="_blank" rel="noopener noreferrer">
-        <img src={imageUrl} alt={`${title} album cover`} />
+        <img className="album-cover" src={imageUrl} alt={`${title} album cover`} />
       </a>
       <div className="overlay">
         <img className="icon favorite-icon" src={icons.favorite} alt="Favorite" />

@@ -24,8 +24,19 @@ body {
   padding: 20px;
 }
 
+.album-card {
+  background-color: #222;
+  padding: 10px;
+}
+
 a {
   text-decoration: none;
+  color: white;
+}
+
+span.artist-name a,
+.artist-list {
+  color: white;
 }
 
 /* Tablet: 2 columns */
@@ -40,9 +51,4 @@ a {
   .album-list {
     grid-template-columns: 1fr;
   }
-}
-
-.album-card {
-  background-color: yellow;
-  padding: 10px;
 }

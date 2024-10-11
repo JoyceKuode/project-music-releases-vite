@@ -1,11 +1,17 @@
-import React from 'react';
+import '../index.css';
 
-const Artist = ({ name, artistUrl }) => {
+const Artist = ({ artists }) => {
   return (
-    <a className="artist-link" href={artistUrl} target="_blank" rel="noopener noreferrer">
-      {name}
-    </a>
-  );
-};
-
+    <div>
+      {artists.map((artist, index) => (
+        <span key={index} className="artist-name">
+          <a href={artist.url} target="_blank" rel="noopener noreferrer">
+            {artist.name}
+          </a>
+          {index < artists.length - 1 && ', '}
+        </span>
+      ))}
+    </div>
+  )
+}
 export default Artist;
