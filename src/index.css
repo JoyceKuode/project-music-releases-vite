@@ -13,8 +13,14 @@ code {
 }
 
 body {
-  background-color: #222;
+  background-color: #161616;
   box-sizing: border-box;
+}
+
+h1 {
+  color: rgb(9, 213, 9);
+  text-align: center;
+  font-size: 3rem;
 }
 
 .album-list {
@@ -25,18 +31,46 @@ body {
 }
 
 .album-card {
-  background-color: #222;
-  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  background-color: #161616;
+  padding: 5%;
 }
 
-a {
+.album-title {
+  font-family: Helvetica, sans-serif;
+  font-size: 14px;
+  color: #ffffff;
   text-decoration: none;
+}
+
+.album-title:hover {
+  text-decoration: underline;
+}
+
+.artist-name a {
+  text-decoration: none;
+  color: #a0a0a0;
+}
+
+.artist-name:hover a {
+  text-decoration: underline;
   color: white;
 }
 
-span.artist-name a,
-.artist-list {
-  color: white;
+.separator {
+  color: #a0a0a0;
+}
+
+.artist-name:hover .separator {
+  color: #a0a0a0;
+}
+
+footer {
+  color: rgb(159, 236, 17);
+  font-size: 16px;
+  text-align: center;
+  margin: 5%;
 }
 
 /* Tablet: 2 columns */
