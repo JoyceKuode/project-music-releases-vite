@@ -20,7 +20,7 @@ body {
 header {
   color: rgb(9, 213, 9);
   text-align: center;
-  font-size: 2rem;
+  font-size: 24px;
 }
 
 .album-list {
@@ -82,7 +82,12 @@ footer {
 }
 
 /* Mobile: 1 column */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
+
+  header {
+    font-size: 18px;
+  }
+
   .album-list {
     grid-template-columns: 1fr;
   }
