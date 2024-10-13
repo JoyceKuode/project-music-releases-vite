@@ -17,10 +17,10 @@ body {
   box-sizing: border-box;
 }
 
-h1 {
+header {
   color: rgb(9, 213, 9);
   text-align: center;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 .album-list {
@@ -42,6 +42,7 @@ h1 {
   font-size: 14px;
   color: #ffffff;
   text-decoration: none;
+  margin-bottom: -5px;
 }
 
 .album-title:hover {

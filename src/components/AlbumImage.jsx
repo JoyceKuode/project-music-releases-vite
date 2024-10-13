@@ -1,11 +1,10 @@
-// This component will display the album cover iamge and link to the album's external URL
+// Display the album cover iamge and link to the album's external URL
+
 import Heart from '../assets/icons/heart.svg';
 import Play from '../assets/icons/play.svg';
 import Dots from '../assets/icons/dots.svg';
 
-
 import './AlbumImage.css';
-
 
 export const AlbumImage = ({ album }) => {
   const albumUrl = album.external_urls.spotify;
@@ -33,5 +32,3 @@ export const AlbumImage = ({ album }) => {
 };
 
 export default AlbumImage;
-
-

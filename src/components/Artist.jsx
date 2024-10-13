@@ -1,4 +1,4 @@
-// This component displays the Artist(s) names, separating with '&' and/or ',' depending on the number of artists
+// Display the Artist(s) names, separating with '&' and/or ',' depending on the number of artists
 
 export const Artist = ({ album }) => {
   return (
